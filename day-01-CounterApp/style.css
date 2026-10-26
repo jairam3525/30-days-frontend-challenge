@@ -1,0 +1,55 @@
+body{
+    margin : 0;
+    background-color: black;
+    height: 100vh;
+}
+*{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+button{
+    background-color: red;
+    border: none;
+    width: 150px;
+    padding: 15px;
+    border-radius: 7.5px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+#display-val{
+   font-size: 30px;
+   margin-bottom: 10px;
+   background-color: white;
+   color: black;
+   width: 100px;
+   align-self: center;
+   border-radius: 5px;
+   padding-left: 3px;
+   padding-bottom: 6px;
+
+}
+
+#theme-logic{
+    width : 250px;
+    margin-top: 50px;
+}
+
+body.light-mode{
+    background-color: white;
+}
+body.light-mode *{
+    color: black;
+}
+body.light-mode #display-val{
+    background-color: black;
+    color: white;
+
+}
+body.light-mode button{
+    background-color: red;
+}
